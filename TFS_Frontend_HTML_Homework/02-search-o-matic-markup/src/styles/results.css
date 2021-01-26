@@ -1,0 +1,22 @@
+.results {
+  width: 1280px;
+  margin: 0 auto;
+  min-height: 349px;
+}
+
+.results__heading {
+  width: 604px;
+  height: 48px;
+  margin-top: 56px;
+  font-weight: 900;
+  line-height: 1.333333;
+  font-size: 2.25rem;
+  color: #ffffff;
+}
+
+.results__grid {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: repeat(4, 302px);
+  gap: 24px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Тинькофф Прокат</title>
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="src/styles/layout.css" />
+    <link rel="stylesheet" href="src/styles/search.css" />
+    <link rel="stylesheet" href="src/styles/results.css" />
+    <link rel="stylesheet" href="src/styles/spinner.css" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <img class="header__logo" src="src/images/logo.svg" alt="logo" />
+    </header>
+    <main class="search">
+      <form class="search__form">
+        <input
+          class="search__input"
+          type="search"
+          name="search"
+          placeholder="Поиск фильмов по жанрам и актерам"
+          autocomplete="off"
+          required
+        />
+        <div class="search__tags"></div>
+      </form>
+      <div class="spinner">
+        <div class="lds-dual-ring"></div>
+      </div>
+      <div class="results">
+        <div class="results__heading"></div>
+
+        <div class="results__grid"></div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__heading">
+        © <current-year>2010</current-year> Тинькофф Прокат
+      </div>
+    </footer>
+
+    <script src="src/index.js" type="module"></script>
+  </body>
+</html>

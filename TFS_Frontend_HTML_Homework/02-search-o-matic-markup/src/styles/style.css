@@ -1,0 +1,502 @@
+ body {
+    background-color: #1C1C1C;
+}
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-top: 0px;
+}
+img {
+    max-width:100%;height:auto;
+}
+.logo-tp {  
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    margin: 80px auto 72px auto;
+}
+
+.search-panel {
+    position: relative;
+}
+.scroll .search-panel {
+    margin-top: 72px;
+    position: relative;
+    z-index: 10;
+}
+.search .search-panel {
+    display: flex;
+    justify-content: center;
+}
+
+.scroll .search-panel {
+    position: fixed;
+    margin-top: -50px;
+
+}
+.scroll .search-panel .search-input {
+    border-bottom: 2px solid #FFF;
+    padding-left: 144px;
+    padding-right: 45px;
+    width: 100%;
+    
+
+}
+
+.scroll .logo-tp {
+    display: none;
+}
+
+.scroll .search-history-more {
+    display: none;
+}
+
+
+.search-active .search-panel .search-loupe {
+    position: relative;
+    left: 0;
+    top: 35px;
+}
+
+.search-active-more .search-panel .search-loupe {
+    position: relative;
+    left: 0;
+    top: 35px;
+}
+.scroll .search-panel .search-loupe {
+    position: relative;
+    left: 84px;
+    top: 65px;
+}
+
+.search-loupe {
+    width: 50px;
+    height: 50px;
+}
+
+.search-input {
+    height: 48px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #FFF;
+    background: #1C1C1C;
+    transition: width .5s;
+    padding-bottom: 28px;
+    color: #FFF;
+    box-sizing: border-box;
+}
+.scroll .search-input {
+    padding-top: 30px;
+    height: 74px;
+    padding-left: 180px;
+
+}
+.search .search-input {
+    width: 628px;
+    transition: width .5s;
+    padding-left: 119px;
+}
+.search-active .search-input {
+    border-bottom: 2px solid #FDCE25;
+    width: 100%;
+    padding-left: 65px;
+    padding-right: 45px;
+    transition: width .5s;
+}
+
+.search-active-more .search-input {
+    border-bottom: 2px solid #FDCE25;
+    width: 100%;
+    padding-left: 65px;
+    padding-right: 45px;
+    transition: width .5s;
+}
+
+.search-active .search-close {
+    position: absolute;
+    left: 1240px;
+    top: 49px;
+}
+.search-close {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+    
+}
+.search-close .close-stick {
+    position: relative;
+    top: 14px;
+}
+.search-active-more .search-close {
+    position: absolute;
+    left: 1240px;
+    top: 49px;
+}
+
+.scroll .search-close {
+    float: right;
+    margin-top: -45px;
+    margin-right: 70px;
+
+}
+
+
+.search-active .search-close .close-stick {
+    background: #777777;
+    width: 36px;
+    height: 4px;
+    border-radius: 3px;
+}
+
+.search-active-more .search-close .close-stick {
+    background: #777777;
+    width: 36px;
+    height: 4px;
+    border-radius: 3px;
+}
+
+.scroll .search-close .close-stick {
+    background: #777777;
+    width: 36px;
+    height: 4px;
+    border-radius: 3px;
+}
+
+ .search-close:hover  .close-stick {
+    background: #FFF;
+    width: 36px;
+    height: 4px;
+    border-radius: 3px;
+
+}
+.scroll .search-close:hover  .close-stick {
+    background: #FFF;
+    width: 36px;
+    height: 4px;
+    border-radius: 3px;
+}
+
+ .search-close .first-stick {
+    transform: rotate(45deg);
+    
+
+}
+
+ .search-close .second-stick {
+    transform: rotate(-45deg);
+    position: relative;
+    top: 10px;
+    left: 1px;
+}
+
+
+.search-history {
+    margin-top: 16px;
+}
+.search-history-more {
+    margin-top: 16px;
+}
+
+.search-active .search-history {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.search-active-more .search-history {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.scroll .search-history {
+    display: none;
+}
+.scroll .no-results {
+    display: none;
+}
+.search .search-history {
+    display: none;
+}
+.search .search-history-more {
+    display: none;
+}
+
+.search-active .search-history-more {
+    display: none;
+}
+
+.search-active-more .search-history-more {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+.search-active-more .search-history {
+    display: none;
+}
+
+.search-history-elem {
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 6px 16px;
+    box-sizing: border-box;
+    line-height: 24px;
+    margin-right: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+.search-history-elem:hover {
+    background: #FFF;
+}
+
+.search-not-found .no-results {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 48px;
+    color: #FFF;
+    margin-top: 100px;
+    margin-bottom: 36px;
+}
+
+.scroll .search-panel {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    opacity: 0.6;
+}
+.search-live .no-results{
+    display: none;
+}
+.search .results {
+    display: none;
+} 
+
+.search .compact {
+    display: none;
+}
+.search .no-results {
+    display: none;
+}
+.search-active .no-results {
+    display: none;
+}
+.search-active .results {
+    display: none;
+} 
+.search-active-more .no-results {
+    display: none;
+} 
+.search-active-more .results {
+    display: none;
+} 
+.search-live .results {
+    display: block;
+}
+
+.search-not-found .no-results {
+    display: block;
+}
+ .results .results-header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 48px;
+    color: #FFF;
+    margin-top: 106px;
+    margin-bottom: 36px;
+}
+  .films-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+  
+}
+
+  .film-item {
+
+    width: 25%;
+    padding-right: 24px;
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    
+}
+
+
+
+.film-card {
+    height: 444px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.24);
+
+}
+.film-card.empty-card {
+    color: rgba(255, 255, 255, 0.24); 
+
+}
+.film-card:hover {
+    cursor: pointer;
+}
+
+ .film-card .film-name {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    height: 72px;
+}
+
+.film-card {
+    position: relative;
+    
+}
+
+.film-info-bg {
+    display: none;
+    height: 174px;
+    width: 100%;
+    position: absolute;
+    top: 272px;
+    background: #000;
+    opacity: 0.6;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.extra-film-info {
+    display: none;
+    width: 100% ;
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFF;
+    position: absolute;
+    top: 280px;
+    opacity: 1;
+    padding-left: 20px;
+    padding-right: 24px;
+    transition: all 0.5s;
+    box-sizing: border-box;
+}
+.film-info {
+    position: absolute;
+    top: 352px;
+    padding-left: 20px;
+    padding-right: 24px;
+    width: 100%;
+}
+.film-card:hover .film-info {
+    display: none;
+}
+.film-info .film-name {
+    color: rgba(255, 255, 255, 0.24);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    height: auto;
+
+}
+.film-info .film-info-row {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 44px;
+}
+
+.film-card:hover .extra-film-info {
+    display: block;
+}
+.film-card:hover .film-info-bg {
+    display:block;
+}
+
+
+.film-info-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.scroll .compact {
+    display: none;
+   
+}
+.search-active .compact {
+    display: none;
+}
+.search-active-more .compact {
+    display: none;
+}
+
+.film-info-loading {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    padding-left: 20px;
+    padding-right: 24px;
+    top: 330px;
+}
+.film-name-loading {
+    width: 246px;
+    height: 24px;;
+    background: rgba(255, 255, 255, 0.08);
+    margin-bottom: 8px;
+}
+.film-info-row-loading {
+    width: 156px;
+    height: 24px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.buttons .btn:hover {
+    background: #FFF;
+}
+
+
+main {
+    min-height: calc(100vh - 118px);
+}
+
+
+
+  footer {
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 18px;
+  }
+
+  footer .copyright {
+      font-size: 12px;
+      font-family: 'Roboto', sans-serif;
+      color: rgba(255, 255, 255, 0.4);
+  }
+
+
+

@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #1c1c1c;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  width: 1440px;
+  min-height: 720px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 148px;
+  height: 28px;
+  margin: 80px auto 0;
+}
+
+movie-card {
+  width: 302px;
+  height: 454px;
+}
+
+.footer {
+  margin-top: 80px;
+  height: 15px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.footer__heading {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.4);
+}
